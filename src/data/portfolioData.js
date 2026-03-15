@@ -52,14 +52,17 @@ export const portfolioData = {
       ]
     },
     {
-      title: "DataFlow Analytics",
+      title: "Ledger",
       description: "Real-time analytics dashboard with interactive charts, data visualization, and automated reporting.",
       type: "SaaS Dashboard",
       color: "cyan",
-      tags: ["React", "D3.js", "Node.js"],
+      tags: ["React", "D3.js", "Node.js", "MongoDB"],
       images: [
-        "https://placehold.co/600x400/cyan/white?text=DataFlow+Dashboard",
-        "https://placehold.co/600x400/cyan/white?text=Charts+and+Graphs"
+        "./Ledger/1.png",
+        "./Ledger/2.png",
+        "./Ledger/3.png",
+        "./Ledger/4.png",
+        "./Ledger/5.png",
       ]
     },
     {
