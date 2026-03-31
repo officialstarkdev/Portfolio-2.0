@@ -29,9 +29,9 @@ const Navbar = () => {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center">
                 <span className="font-mono font-bold text-white text-lg">&lt;/&gt;</span>
               </div>
-              <span className="font-semibold text-lg">RMUA</span>
+              <span className="font-semibold text-lg">TS</span>
             </a>
-            
+
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a key={link.href} href={link.href} className="nav-link text-sm text-slate-300 hover:text-white transition-colors">
@@ -55,9 +55,9 @@ const Navbar = () => {
         <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden px-6 pb-4`}>
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a 
-                key={link.href} 
-                href={link.href} 
+              <a
+                key={link.href}
+                href={link.href}
                 onClick={closeMenu}
                 className="text-slate-300 hover:text-white transition-colors"
               >

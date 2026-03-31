@@ -1,6 +1,6 @@
 export const portfolioData = {
   hero: {
-    name: "RM Usman",
+    name: "Talha Shahid",
     title: "Full-Stack Web Developer",
     tagline: "I craft high-performance, visually stunning web experiences that help businesses grow. From elegant landing pages to complex web applications — I bring your vision to life.",
     stats: [
@@ -109,8 +109,8 @@ export const portfolioData = {
     { title: "Fast Delivery", description: "Quick turnaround times without compromising quality. Your project launches on schedule.", color: "orange" }
   ],
   testimonials: [
-    { id: "JM", name: "James Mitchell", role: "Startup Founder, USA", quote: "Usman exceeded all expectations. The e-commerce site he built for us increased conversions by 40%. Highly professional and delivers exactly what was promised.", color: "indigo" },
-    { id: "SK", name: "Sophie Klein", role: "Marketing Director, UK", quote: "Working with Usman was a pleasure. Great communication, fast delivery, and the code quality was exceptional. Will definitely hire again for future projects!", color: "cyan" },
-    { id: "ZK", name: "Zain Khan", role: "Business Owner, Pakistan", quote: "Usman transformed our outdated website into a modern, fast, and beautiful platform. His attention to detail and technical expertise are remarkable.", color: "emerald" }
+    { id: "JM", name: "James Mitchell", role: "Startup Founder, USA", quote: "Talha exceeded all expectations. The e-commerce site he built for us increased conversions by 40%. Highly professional and delivers exactly what was promised.", color: "indigo" },
+    { id: "SK", name: "Sophie Klein", role: "Marketing Director, UK", quote: "Working with Talha was a pleasure. Great communication, fast delivery, and the code quality was exceptional. Will definitely hire again for future projects!", color: "cyan" },
+    { id: "ZK", name: "Zain Khan", role: "Business Owner, Pakistan", quote: "Talha transformed our outdated website into a modern, fast, and beautiful platform. His attention to detail and technical expertise are remarkable.", color: "emerald" }
   ]
 };
