@@ -29,7 +29,7 @@ const Navbar = () => {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center">
                 <span className="font-mono font-bold text-white text-lg">&lt;/&gt;</span>
               </div>
-              <span className="font-semibold text-lg">TS</span>
+              <span className="font-semibold text-lg">RMUA</span>
             </a>
             
             <div className="hidden md:flex items-center gap-8">
