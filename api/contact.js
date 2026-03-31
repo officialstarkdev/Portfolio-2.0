@@ -46,11 +46,19 @@ export default async function handler(req, res) {
         await transporter.verify();
 
         await transporter.sendMail({
+            from: `"${name} via Portfolio" <${process.env.EMAIL_USER}>`,
+            replyTo: `"${name}" <${email}>`,
             to: process.env.EMAIL_USER,
-            from: `"Portfolio" <${process.env.EMAIL_USER}>`,
-            subject: "Hello",
             subject: `Contact: ${subject}`,
-            html: `<p><strong>From:</strong> ${name} (${email})</p><p>${message}</p>`,
+            html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Budget:</strong> ${budget || 'Not specified'}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
         });
 
         return res.status(200).json({
