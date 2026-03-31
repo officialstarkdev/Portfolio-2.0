@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
     setDialog(null);
-    
+
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
@@ -46,16 +46,16 @@ const Contact = () => {
       <div className="absolute inset-0 hero-bg"></div>
       <div className="floating-shape w-96 h-96 bg-indigo-500/15 -bottom-48 -right-48"></div>
       <div className="floating-shape w-72 h-72 bg-cyan-400/10 top-20 -left-36"></div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <SectionHeading 
-          number="07" 
-          subtitle="Get in touch" 
-          title1="Let's Work" 
-          title2="Together" 
-          description="Have a project in mind? I'd love to hear about it. Let's discuss how I can help bring your ideas to life." 
+        <SectionHeading
+          number="07"
+          subtitle="Get in touch"
+          title1="Let's Work"
+          title2="Together"
+          description="Have a project in mind? I'd love to hear about it. Let's discuss how I can help bring your ideas to life."
         />
-        
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
           <div className="space-y-8 section-animate">
@@ -64,7 +64,7 @@ const Contact = () => {
               <p className="text-slate-400 mb-8">
                 Ready to start your project? Send me a message and I'll get back to you within 24 hours. Let's create something amazing together.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center">
@@ -77,7 +77,7 @@ const Contact = () => {
                     <div className="font-medium">official.starkdev@gmail.com</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
                     <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@ const Contact = () => {
                     <div className="font-medium">Within 24 hours</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-400/20 to-emerald-500/20 flex items-center justify-center">
                     <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ const Contact = () => {
                 </div>
               </div>
             </GlassCard>
-            
+
             {/* Social links */}
             <div className="flex gap-4">
               <a href="#" className="glass w-12 h-12 rounded-xl flex items-center justify-center hover:border-indigo-500/50 transition-colors">
@@ -118,7 +118,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Contact form */}
           <div className="section-animate">
             <GlassCard>
@@ -180,7 +180,7 @@ const Contact = () => {
         <div className="fixed inset-0 z-50 flexItems-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm animate-in fade-in duration-200 flex items-center">
           <div className="bg-slate-800 border border-slate-700/50 rounded-2xl p-8 max-w-sm w-full mx-auto shadow-2xl relative text-center animate-in zoom-in-95 duration-200">
             {/* Close button */}
-            <button 
+            <button
               onClick={closeDialog}
               className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
             >
@@ -190,9 +190,8 @@ const Contact = () => {
             </button>
 
             {/* Icon */}
-            <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${
-              dialog.type === 'success' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
-            }`}>
+            <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${dialog.type === 'success' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
+              }`}>
               {dialog.type === 'success' ? (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
@@ -207,10 +206,10 @@ const Contact = () => {
             {/* Content */}
             <h4 className="text-xl font-semibold text-white mb-2">{dialog.title}</h4>
             <p className="text-slate-400">{dialog.text}</p>
-            
-            <Button 
-              onClick={closeDialog} 
-              className="mt-8 w-full justify-center" 
+
+            <Button
+              onClick={closeDialog}
+              className="mt-8 w-full justify-center"
               variant="primary"
             >
               Okay

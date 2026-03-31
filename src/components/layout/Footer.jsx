@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center">
               <span className="font-mono font-bold text-white text-lg">&lt;/&gt;</span>
             </div>
-            <span className="font-semibold">RM Usman</span>
+            <span className="font-semibold">Talha Shahid</span>
           </div>
           <div className="text-slate-400 text-sm text-center">
             © <span>{currentYear}</span> All rights reserved. Crafted with ❤️ and lots of ☕

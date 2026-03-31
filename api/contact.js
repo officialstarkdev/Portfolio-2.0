@@ -40,7 +40,7 @@ export default async function handler(req, res) {
         });
 
         await transporter.sendMail({
-            from: `"Usman" <${process.env.EMAIL_USER}>`,
+            from: `"Talha" <${process.env.EMAIL_USER}>`,
             to: email,
             subject: 'Thank you for contacting me!',
             html: `
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
         <p>I will review your inquiry and get back to you within 24 hours.</p>
         <br>
         <p>Best regards,</p>
-        <p>Usman</p>
+        <p>Talha</p>
       `,
         });
 
