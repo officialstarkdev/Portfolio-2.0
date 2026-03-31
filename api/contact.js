@@ -46,8 +46,9 @@ export default async function handler(req, res) {
         await transporter.verify();
 
         await transporter.sendMail({
-            from: `"Portfolio" <${process.env.EMAIL_USER}>`,
             to: process.env.EMAIL_USER,
+            from: `"Portfolio" <${process.env.EMAIL_USER}>`,
+            subject: "Hello",
             subject: `Contact: ${subject}`,
             html: `<p><strong>From:</strong> ${name} (${email})</p><p>${message}</p>`,
         });
@@ -67,4 +68,4 @@ export default async function handler(req, res) {
             version: VERSION
         });
     }
-}
+}
