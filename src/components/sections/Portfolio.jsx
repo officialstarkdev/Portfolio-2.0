@@ -140,7 +140,7 @@ const Portfolio = () => {
           description="A selection of projects that showcase my skills and attention to detail"
         />
 
-        <div className="section-animate grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="section-animate grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {portfolio.map((project, index) => (
             <div key={index} className="project-card glass-card rounded-2xl overflow-hidden group flex flex-col">
               <ProjectImageCover project={project} />

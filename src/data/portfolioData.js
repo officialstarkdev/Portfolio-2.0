@@ -88,8 +88,6 @@ export const portfolioData = {
         "./eduflow/TeacherPage.png",
       ]
     },
-    { title: "QuickBite Delivery", description: "Food ordering app with real-time tracking, restaurant management, and delivery optimization.", type: "Food Delivery", color: "orange", link: "#", tags: ["React Native", "Firebase", "Maps API"] },
-    { title: "MediCare Portal", description: "Patient management system with appointment booking, medical records, and telemedicine features.", type: "Healthcare", color: "pink", link: "#", tags: ["Angular", "Django", "WebRTC"] },
     {
       title: " V-Stay", description: "Property listing platform with virtual tours, mortgage calculator, and booking system.", type: "Real Estate", color: "violet", link: "https://vstay.vercel.app", tags: ["Reactjs", "Express", "Tailwind CSS ", "MongoDB"], images: [
 
